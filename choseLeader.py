@@ -16,7 +16,7 @@ def choseLeader(faultNodes, n=None):
         print ("n less than 1/3 f")
         return False
     Lst = [combin(f,i)*combin(n-f,f+1-i)/combin(n,f+1) for i in range(f+1)]
-    #printResults(Lst)
+    printResults(Lst)
     return Lst
 # will print the input data with the predefined format
 def printResults(dataLst):
